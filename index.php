@@ -19,7 +19,7 @@ $inventory->checkLogin();
                 <div class="card-header">
                     <div class="row">
                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-6">
-                            <h3 class="card-title">Inventory</h3>
+                            <h3 class="card-title">IMS Inventory Management System</h3>
                         </div>
                     </div>
                 </div>
