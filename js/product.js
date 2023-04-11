@@ -1,3 +1,4 @@
+///use Jquery 
 $(document).ready(function () {
   var productData = $("#productList").DataTable({
     lengthChange: false,
