@@ -27,8 +27,8 @@ $inventory->checkLogin();
 
                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 text-end">
                             <button type="button" name="addPurchase" id="addPurchase"
-                                class="btn btn-primary btn-sm rounded-0"><i class="far fa-plus-square"></i> Add
-                                Purchase</button>
+                                class="btn btn-primary btn-sm rounded-0">
+                                <i class="far fa-plus-square"></i> Add Purchase</button>
                         </div>
                     </div>
                 </div>
