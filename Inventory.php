@@ -3,7 +3,7 @@ class Inventory {
     private $host  = 'localhost';
     private $user  = 'root';
     private $password   = '';
-    private $database  = 'ims_db';   
+    private $database  = 'inventory-management-db';   
 	private $userTable = 'ims_user';	
     private $customerTable = 'ims_customer';
 	private $categoryTable = 'ims_category';
@@ -26,7 +26,7 @@ class Inventory {
 	private function getData($sqlQuery) {
 		$result = mysqli_query($this->dbConnect, $sqlQuery);
 		if(!$result){
-			die('Error in query: '. mysqli_error());
+			die("Connection failed: " . mysqli_connect_error());
 		}
 		$data= array();
 		while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -37,7 +37,7 @@ class Inventory {
 	private function getNumRows($sqlQuery) {
 		$result = mysqli_query($this->dbConnect, $sqlQuery);
 		if(!$result){
-			die('Error in query: '. mysqli_error());
+			die("Connection failed: " . mysqli_connect_error());
 		}
 		$numRows = mysqli_num_rows($result);
 		return $numRows;
